@@ -69,7 +69,9 @@
                 </tr>
             </thead>
             <tbody>
-                
+            
+
+            <!-- tramite il ciclo foreach ciclo all'interno dell'array rendendo dinamiche le voci della mia tabella -->
             <?php foreach ($hotels as $hotel) : ?>
                 <tr>
                     <th scope="row">🛏 <?php echo $hotel['name']?></th>
