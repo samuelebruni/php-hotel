@@ -66,6 +66,7 @@
                     <th scope="col">Description</th>
                     <th scope="col">Vote</th>
                     <th scope="col">Distance to Center</th>
+                    <th scope="col">Parking</th>
                 </tr>
             </thead>
             <tbody>
@@ -80,6 +81,15 @@
                         <?php echo $hotel['vote']?> ⭐
                     </td>
                     <td><?php echo $hotel['distance_to_center'].' '.'km' ?>🚶‍♂️</td>
+                    <td>
+                        <?php 
+                            if ($hotel['parking'] === true) {
+                                echo 'Parking ✅';
+                            } else {
+                                echo 'Parking ❌';
+                            }
+                        ?>
+                    </td>
                 </tr>
             <?php endforeach; ?>
 
